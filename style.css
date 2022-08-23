@@ -1,6 +1,15 @@
 html{
     height: 100%;
 }
+h1{
+    font-style: italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position:absolute;
+    top: 20%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+}
 /* instagram logo colors for inspiration */
 body{
     background: linear-gradient(to bottom, rgb(187, 170, 39), rgb(147, 70, 189));

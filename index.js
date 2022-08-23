@@ -50,7 +50,8 @@ button.addEventListener('click', function(){
             document.getElementById('output').innerHTML = gram + "grams = " +
             stones.toFixed(3) + 'stones.';
         }
-    }})
+    }}) 
+//     console.log()
 // function showUser() {
 //     const baseURL = "https://i.kym-cdn.com/entries/icons/mobile/000/020/633/le_monke.jpg"
 //     fetch(baseURL)
