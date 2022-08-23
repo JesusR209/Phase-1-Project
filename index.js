@@ -51,6 +51,13 @@ button.addEventListener('click', function(){
             stones.toFixed(3) + 'stones.';
         }
     }}) 
+    let restart = document.getElementById('Restart');
+
+    button.addEventListener('click', function(){
+        function 
+    })
+    
+
 //     console.log()
 // function showUser() {
 //     const baseURL = "https://i.kym-cdn.com/entries/icons/mobile/000/020/633/le_monke.jpg"
