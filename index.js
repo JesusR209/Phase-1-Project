@@ -3,15 +3,11 @@ let clear = document.getElementById('Clear');
 let gramz = document.getElementById('grams');
 let output = document.getElementById('output')
 
-clear.addEventListener('click', () => {
+clear.addEventListener('dblclick', () => {
     gramz.forEach(input = gramz.value = '')
-    if(gramz.value === '') {
-        document.getElementById('output').innerHTML = ''
-    }
+ 
     })
 
-
-console.log(gramz)
 
 
 
