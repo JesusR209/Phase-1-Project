@@ -32,10 +32,25 @@ button.addEventListener('click', function(){
             document.getElementById('output').innerHTML = gram + "grams = " +
             pounds.toFixed(3) + 'pounds.';
         }
-    }
-        )
-    }
-})
+        function  convert_kilogram(gram){
+            let rate = 0.001, kilogram;
+            kilogram = gram * rate;
+            document.getElementById('output').innerHTML = gram + "grams = " +
+            kilogram.toFixed(3) + 'kg.';
+        }
+        function  convert_ounces(gram){
+            let rate = 0.035274, ounces;
+            ounces = gram * rate;
+            document.getElementById('output').innerHTML = gram + "grams = " +
+            ounces.toFixed(3) + 'ounces.';
+        }
+        function  convert_stones(gram){
+            let rate = 0.00015747, stones;
+            stones = gram * rate;
+            document.getElementById('output').innerHTML = gram + "grams = " +
+            stones.toFixed(3) + 'stones.';
+        }
+    }})
 // function showUser() {
 //     const baseURL = "https://i.kym-cdn.com/entries/icons/mobile/000/020/633/le_monke.jpg"
 //     fetch(baseURL)
