@@ -1,4 +1,19 @@
 let button = document.getElementById('btn');
+let clear = document.getElementById('Clear');
+let gramz = document.getElementById('grams');
+let output = document.getElementById('output')
+
+clear.addEventListener('click', () => {
+    gramz.forEach(input = gramz.value = '')
+    if(gramz.value === '') {
+        document.getElementById('output').innerHTML = ''
+    }
+    })
+
+
+console.log(gramz)
+
+
 
 button.addEventListener('click', function(){
     const gram = parseInt(document.getElementById('grams').value);
@@ -49,13 +64,25 @@ button.addEventListener('click', function(){
             stones = gram * rate;
             document.getElementById('output').innerHTML = gram + "grams = " +
             stones.toFixed(3) + 'stones.';
-        }
-    }}) 
-    let restart = document.getElementById('Restart');
 
-    button.addEventListener('click', function(){
-        function 
-    })
+        }
+    }})
+
+
+    // button.addEventListener('click', function(){
+    //     const gram = parseInt(document.getElementById('grams').value);
+    //     const type = document.getElementById('type').value;
+
+
+
+
+
+
+
+    // document.getElementById('Clear').addEventListener('click',
+    // function clearInputField() {
+    //     document.getElementById(gram).value = '';
+    // })
     
 
 //     console.log()
