@@ -2,6 +2,15 @@ let button = document.getElementById('btn');
 let clear = document.getElementById('Clear');
 let gramz = document.getElementById('grams');
 let output = document.getElementById('output')
+let type = document.getElementById('type')
+
+type.addEventListener('mouseover', () => {
+    document.getElementById('type').style.background = "linear-gradient(to right, rgb(200, 183, 52), rgb(160, 83, 202))";
+})
+type.addEventListener('mouseleave', () => {
+    document.getElementById('type').style.background = "white";
+})
+    
 
 clear.addEventListener('dblclick', () => {
     gramz.forEach(input = gramz.value = '')
