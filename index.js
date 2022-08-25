@@ -1,5 +1,5 @@
 let button = document.getElementById('btn');
-let clear = document.getElementById('Clear');
+let clearButton = document.getElementById('Clear');
 let gramz = document.getElementById('grams');
 let output = document.getElementById('output')
 let type = document.getElementById('type')
@@ -10,10 +10,10 @@ type.addEventListener('mouseover', () => {
 type.addEventListener('mouseleave', () => {
     document.getElementById('type').style.background = "white";
 })
-    
 
-clear.addEventListener('dblclick', () => {
-    gramz.forEach(input = gramz.value = '')
+
+clearButton.addEventListener('dblclick', () => {
+    input = gramz.value = ''
  
     })
 
@@ -91,6 +91,12 @@ function imageHolder(pictures) {
     img.src= pictures.pictureURL
     imageOne.append(img)
 }
+
+// clearButton.addEventListener('dblclick', () => {
+//     input = gramz.value = ''
+ 
+//     })
+
 // You'd pretty much have to rewrite the code for 
 // it in terms of dot notations 
 // I.e. key.item and render it to where you'd want it to be in
