@@ -19,16 +19,21 @@ clearButton.addEventListener('dblclick', () => {
 
 
 
-
+//You are parsing the integer of grams. value and making it
+//usable in the function by allowing JS to format it
 button.addEventListener('click', function(){
     const gram = parseInt(document.getElementById('grams').value);
     const type = document.getElementById('type').value;
-
+//You are grabbing the highlighting 'grams' with .focus
+// to see if it returns nothing or NaN
+// if it does the website will show an error with message written in 'error'
     if(gram === '' || isNaN(gram)){
         document.getElementById('grams').focus();
         document.getElementById('error').innerHTML = 'Please provide a valid gram';
         document.getElementById('output').innerHTML = '';
     }else{
+        //Here the code has 'error' displayed nothing is written in but convert is pushed
+        //switch executes different blocks of code depending on which measurement is chosen
         document.getElementById('error').innerHTML = ''
         switch(type){
             case 'Pounds':
@@ -46,6 +51,9 @@ button.addEventListener('click', function(){
             default:
                 alert('Error');
         }
+        //These functions grab the rate for their measurement to convert from grams to new measurement
+        //they change the output from ' ' the newly converted amount and
+        //used tofixed(3) to round to the 3rd decimal
         function  convert_pounds(gram){
             let rate = 0.0022, pounds;
             pounds = gram * rate;
@@ -72,6 +80,7 @@ button.addEventListener('click', function(){
 
         }
     }})
+//grabbing JSON file JSON-ifying the file(readable format)
 
 function showUser() {
     fetch("http://localhost:3000/pictures")
@@ -83,11 +92,13 @@ function showUser() {
 }
 
 showUser()
-
+//Holds images from db.json, gets image tag, creates new element
+//adds class of scale image (used in CSS)
 function imageHolder(pictures) {
     const imageOne = document.getElementById('image1')
     const img = document.createElement('img')
     img.classList.add('scaleimage')
+    //'img' source is url found in JSON file and we are attaching it with append to 'image1' 
     img.src= pictures.pictureURL
     imageOne.append(img)
 }
@@ -98,5 +109,5 @@ function imageHolder(pictures) {
 //     })
 
 // You'd pretty much have to rewrite the code for 
-// it in terms of dot notations 
+// it in terms of dot notations.
 // .I.e. key.item and render it to where you'd want it to be in
