@@ -99,4 +99,4 @@ function imageHolder(pictures) {
 
 // You'd pretty much have to rewrite the code for 
 // it in terms of dot notations 
-// I.e. key.item and render it to where you'd want it to be in
+// .I.e. key.item and render it to where you'd want it to be in
