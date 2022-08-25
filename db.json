@@ -1,10 +1,10 @@
 {
-    "weight-library"
+    "pictures":
     [
         {
-            "id": 1,
-            "link": "https://i.kym-cdn.com/entries/icons/mobile/000/020/633/le_monke.jpg",
-            "weight":
+       "id": 1,
+       "pictureURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Balanced_scale_of_Justice.svg/1600px-Balanced_scale_of_Justice.svg.png"
+
         }
     ]
 }

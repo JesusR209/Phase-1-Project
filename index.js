@@ -73,32 +73,24 @@ button.addEventListener('click', function(){
         }
     }})
 
+function showUser() {
+    fetch("http://localhost:3000/pictures")
+    .then(response => response.json())
+    .then(response => response.forEach ((pictures)=> {
+        console.log(response)
+        imageHolder(pictures)
+    }))
+}
 
-    // button.addEventListener('click', function(){
-    //     const gram = parseInt(document.getElementById('grams').value);
-    //     const type = document.getElementById('type').value;
+showUser()
 
-
-
-
-
-
-
-    // document.getElementById('Clear').addEventListener('click',
-    // function clearInputField() {
-    //     document.getElementById(gram).value = '';
-    // })
-    
-
-//     console.log()
-// function showUser() {
-//     const baseURL = "https://i.kym-cdn.com/entries/icons/mobile/000/020/633/le_monke.jpg"
-//     fetch(baseURL)
-//     .then(response => response.json())
-//     .then(response => response.foreach ((response)=> {
-//         console.log(response.link)
-//         response.link
-//     }))
-// }
-
-// showUser()
+function imageHolder(pictures) {
+    const imageOne = document.getElementById('image1')
+    const img = document.createElement('img')
+    img.classList.add('scaleimage')
+    img.src= pictures.pictureURL
+    imageOne.append(img)
+}
+// You'd pretty much have to rewrite the code for 
+// it in terms of dot notations 
+// I.e. key.item and render it to where you'd want it to be in
