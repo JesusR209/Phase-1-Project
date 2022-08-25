@@ -93,7 +93,7 @@ function imageHolder(pictures) {
 }
 
 // clearButton.addEventListener('dblclick', () => {
-//     input = gramz.value = ''
+//     gramz.forEach(input = gramz.value = '')
  
 //     })
 
