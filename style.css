@@ -32,6 +32,7 @@ span{
     font-size: 13px;
 }
 /* wrapper class cleans up original looks by adding background colors and proper/aesthically pleasing position */
+/* adds transparency to black backrground */
 .wrapper{
     position: absolute;
     top: 50%;
