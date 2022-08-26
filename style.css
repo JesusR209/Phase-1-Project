@@ -53,8 +53,8 @@ input{
     color: rgb(255, 255, 255);
 }
 select{
-    outline: none;
-}
+    outline: none; 
+} 
 button{
     color:white;
     padding: 10px;
