@@ -57,6 +57,6 @@ button{
     color:white;
     padding: 10px;
     border: 2px solid white;
-    background: none;
+    background: linear-gradient(to left, rgb(243, 159, 173), rgb(233, 233, 0));
     cursor: pointer;
 }
